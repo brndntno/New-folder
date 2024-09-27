@@ -1,0 +1,28 @@
+.suit {
+    width: 100px;
+    height: 100px;
+    transition: width 2s, height 2s;
+}
+.suit:hover {
+    width: 200px;
+    height: 200px
+}
+@keyframes gray-animation {
+    from {filter: grayscale(0);}
+    to {filter: grayscale(1);}
+}
+.gray {
+    width: 200px;
+    height: 200px;
+    animation: gray-animation 5s forwards;
+}
+.stay {
+    width: 200px;
+    height: 200px;
+    transition: width 2s, height 2s, transform 2s;
+}
+.stay:active {
+    transform: rotate(360deg);
+    width: 300px;
+    height: 300px;
+}
